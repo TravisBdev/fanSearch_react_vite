@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
+
+:root {
+  --main-bg-color: #1a2a33;
+  --light-bg-color: #1f3641;
+  --font-color: #A8BFC9;
+  --btn-one-orange: #f2b137;
+  --btn-two-grey: #DBE8ED;
+  --light-blue: #65e9e4;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5em;
+}
+
+.title {
+  color: var(--font-color);
+  margin: 0 0 .2em 0;
+}
+
+.search {
+  border: none;
+  border-radius: 5px;
+  line-height: 1.2rem;
+  background-color: var(--btn-two-grey);
+}
+
+/* Feature Section */
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  width: 15em;
+  max-width: 18em;
+  min-width: 10em;
+  height: 20em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+}
+
+.fun-facts-btn {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--light-bg-color);
+  background-color: var(--btn-one-orange);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.fun-facts-btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .fun-facts-btn {
+    padding: 0.25em 0.75em;
+  }
+}
