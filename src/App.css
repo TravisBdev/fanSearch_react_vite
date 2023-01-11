@@ -51,7 +51,7 @@ body {
   min-width: 10em;
   height: 20em;
   margin-top: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   border: 1px solid #f2f2f2;
   border-radius: 5px;
 }
@@ -84,4 +84,30 @@ body {
   .fun-facts-btn {
     padding: 0.25em 0.75em;
   }
+}
+
+/* potential arrows */
+.arrows {
+  border: 1px solid white;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arrow {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid var(--btn-one-orange);
+  border-right: 2px solid var(--btn-one-orange)
+}
+
+.arrow-right {
+  transform: rotate(45deg);
+}
+
+.arrow-left {
+  transform: rotate(-135deg);
 }
