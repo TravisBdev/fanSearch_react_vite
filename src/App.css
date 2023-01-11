@@ -43,6 +43,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .img-container {
@@ -88,7 +89,6 @@ body {
 
 /* potential arrows */
 .arrows {
-  border: 1px solid white;
   width: 100%;
   margin-bottom: 1rem;
   display: flex;
@@ -106,8 +106,14 @@ body {
 
 .arrow-right {
   transform: rotate(45deg);
+  position: absolute;
+  top: 40%;
+  right: 8%;
 }
 
 .arrow-left {
   transform: rotate(-135deg);
+  position: absolute;
+  top: 40%;
+  left: 8%;
 }
